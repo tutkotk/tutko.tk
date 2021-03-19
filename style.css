@@ -174,20 +174,22 @@ main .nextjs {
 
 .mailto a,
 .mailto svg path {
+  color: rgb(230, 0, 18);
+  fill: #e60012;
   transition: all 0.15s ease-in-out;
 }
 
 .mailto:hover a {
-  color: rgb(230, 0, 18);
+  color: rgb(234, 234, 234);
 }
 
 .mailto:hover svg path {
-  fill: #e60012;
+  fill: rgb(234, 234, 234);
 }
 
 .mailto svg {
   height: 2.074rem;
-  margin-right: 1.2rem;
+  margin-right: 1rem;
 }
 
 #surfer {
