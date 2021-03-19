@@ -64,6 +64,7 @@ main {
 
   min-height: 100vh;
   background-color: rgb(32, 33, 36);
+  z-index: 1;
 }
 
 main .description {
@@ -178,4 +179,24 @@ main .nextjs {
 .mailto svg {
   height: 2.074rem;
   margin-right: 1.2rem;
+}
+
+#surfer {
+  position: absolute;
+  height: 40vh;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  #surfer {
+    height: 30vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #surfer {
+    height: 25vh;
+  }
 }
