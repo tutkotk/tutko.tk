@@ -67,6 +67,14 @@ main {
   z-index: 1;
 }
 
+.container {
+  padding: 3.583rem;
+  border: 1px solid rgba(223, 222, 219, 0.3);
+  border-radius: 2.074rem;
+  z-index: 2;
+  background-color: rgba(28, 29, 32, 0.4);
+}
+
 main .description {
   display: flex;
   flex-direction: column;
@@ -197,6 +205,6 @@ main .nextjs {
 
 @media only screen and (max-width: 600px) {
   #surfer {
-    height: 25vh;
+    height: 20vh;
   }
 }
