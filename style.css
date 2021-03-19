@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   /* border: 1px solid white; */
 }
 
@@ -31,15 +32,17 @@ a {
 }
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: fixed;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   width: 100%;
 }
 
 .header a {
   text-decoration: none;
+  line-height: 1;
 }
 
 .inner {
@@ -47,52 +50,37 @@ a {
 }
 
 .main-logo {
-  font-size: 4.3rem;
+  font-size: 3.583rem;
   font-weight: bold;
   color: rgb(230, 0, 18);
   margin: 2.074rem;
 }
 
-ul {
-  display: flex;
-  margin: 2.074rem;
-}
-
-ul li:first-child {
-  margin-right: 2.074rem;
-}
-
-.main-nav {
-  color: #dfdedb;
-  font-size: 2.074rem;
-  text-decoration: none;
-  text-transform: lowercase;
-}
-
 main {
-  min-height: 100vh;
-  background-color: rgb(32, 33, 36);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  min-height: 100vh;
+  background-color: rgb(32, 33, 36);
 }
 
 main .description {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 main h1 {
-  font-size: 5.16rem;
+  font-size: 4.3rem;
   color: #dfdedb;
   margin-bottom: 3.583rem;
 }
 
 main p {
-  font-size: 2.488rem;
+  font-size: 2.074rem;
   color: rgba(223, 222, 219, 0.7);
   max-width: 55vw;
   font-weight: normal;
@@ -103,6 +91,7 @@ main ul {
   flex-direction: column;
   justify-content: center;
   max-width: 45vw;
+  margin-left: 3rem;
 }
 
 main li {
@@ -111,12 +100,16 @@ main li {
   font-weight: normal;
 }
 
-main p:nth-child(1),
-main p:nth-child(2) {
+main li:nth-child(1) {
+  margin-bottom: 1rem;
+}
+
+main p:nth-child(1) {
   margin-bottom: 2.488rem;
 }
 
 main p:nth-child(3) {
+  margin-top: 2.488rem;
   margin-bottom: 3.583rem;
 }
 
@@ -137,6 +130,30 @@ main a {
 
   text-decoration: none;
   font-weight: bold;
+}
+
+main .name {
+  color: #dfdedb;
+}
+
+main .html {
+  color: rgb(241, 101, 41);
+}
+
+main .sass {
+  color: rgb(206, 103, 154);
+}
+
+main .js {
+  color: rgb(247, 224, 24);
+}
+
+main .react {
+  color: rgb(74, 213, 255);
+}
+
+main .nextjs {
+  color: rgb(234, 234, 234);
 }
 
 .mailto {
