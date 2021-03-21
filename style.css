@@ -114,7 +114,7 @@ body p {
 
 @media only screen and (max-width: 600px) {
   .header {
-    max-width: 80vw;
+    max-width: 90vw;
   }
 }
 
@@ -208,6 +208,18 @@ body p {
   margin-right: 1.953rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .main .__card .__list .astronaut {
+    width: calc(1.5 * 8rem);
+  }
+  .main .__card .__list .web {
+    width: calc(1.5 * 8rem);
+  }
+  .main .__card .__list .alien {
+    width: calc(1.5 * 5rem);
+  }
+}
+
 .main .__card .__list li {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -285,7 +297,7 @@ body p {
 
 @media only screen and (max-width: 600px) {
   .main {
-    max-width: 80vw;
+    max-width: 90vw;
   }
 }
 
@@ -358,5 +370,16 @@ body p {
   position: relative;
   height: 15vh;
   z-index: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    height: 100vh;
+    -webkit-backdrop-filter: none;
+            backdrop-filter: none;
+  }
+  #surfer {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
