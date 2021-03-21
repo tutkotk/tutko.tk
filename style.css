@@ -79,6 +79,8 @@ body p {
 }
 
 .header {
+  border-right: 2px solid #1e1e21;
+  background-color: rgba(30, 30, 33, 0.6);
   display: inline-block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -94,6 +96,12 @@ body p {
 
 .header .__header-container {
   max-width: 12vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .header .__header-container {
+    max-width: 25vw;
+  }
 }
 
 .header .__header-logo-link {
@@ -119,6 +127,8 @@ body p {
 }
 
 .main {
+  border-right: 2px solid #1e1e21;
+  background-color: rgba(30, 30, 33, 0.6);
   max-width: 50vw;
   padding-left: 4.3rem;
   padding-bottom: 4.3rem;
@@ -306,8 +316,8 @@ body p {
 }
 
 #surfer {
-  position: absolute;
-  width: 20vw;
+  position: fixed;
+  width: 25vw;
   right: 0;
   bottom: 0;
 }
@@ -330,45 +340,87 @@ body p {
           align-items: center;
 }
 
+@media only screen and (max-width: 900px) {
+  .tech {
+    width: 20rem;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: calc(70vw - 10rem);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #surfer {
+    position: fixed;
+    width: 17vw;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tech {
+    width: 100vw;
+    left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #surfer {
+    position: relative;
+    width: 20vw;
+    left: 50%;
+    bottom: 1rem;
+    z-index: 4;
+  }
+}
+
 .htmlsvg {
   position: relative;
-  height: 15vh;
-  margin-top: 1.66vh;
-  margin-bottom: 1.66vh;
+  height: 17.6vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   z-index: 1;
 }
 
 .csssvg {
   position: relative;
-  height: 15vh;
-  margin-bottom: 1.66vh;
+  height: 17.6vh;
+  margin-bottom: 2vh;
   z-index: 1;
 }
 
 .sasssvg {
   position: relative;
-  height: 15vh;
-  margin-bottom: 1.66vh;
+  height: 17.6vh;
+  margin-bottom: 2vh;
   z-index: 1;
 }
 
 .jssvg {
   position: relative;
-  height: 15vh;
-  margin-bottom: 1.66vh;
+  height: 17.6vh;
+  margin-bottom: 2vh;
   z-index: 1;
 }
 
 .reactsvg {
   position: relative;
-  height: 15vh;
-  margin-bottom: 1.66vh;
-  z-index: 1;
-}
-
-.nextjssvg {
-  position: relative;
-  height: 15vh;
+  height: 17.6vh;
+  margin-bottom: 2vh;
   z-index: 1;
 }
 
