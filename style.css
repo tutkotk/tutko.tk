@@ -15,6 +15,8 @@ html {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   z-index: 2;
+  -webkit-box-shadow: 0 0 30px rgba(30, 30, 33, 0.6);
+          box-shadow: 0 0 30px rgba(30, 30, 33, 0.6);
 }
 
 @media only screen and (max-width: 900px) {
@@ -194,7 +196,6 @@ body p {
 }
 
 .main .__card .__list {
-  padding-left: 4%;
   font-size: 2.488rem;
   font-weight: 300;
 }
@@ -220,13 +221,13 @@ body p {
 
 @media only screen and (max-width: 600px) {
   .main .__card .__list .astronaut {
-    width: calc(1.5 * 8rem);
+    width: 8rem;
   }
   .main .__card .__list .web {
-    width: calc(1.5 * 8rem);
+    width: 8rem;
   }
   .main .__card .__list .alien {
-    width: calc(1.5 * 5rem);
+    width: 5rem;
   }
 }
 
