@@ -349,6 +349,21 @@ body p {
   z-index: 2;
 }
 
+#surfer2 {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #surfer2 {
+    display: block;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 50vw;
+    margin-top: 4.3rem;
+  }
+}
+
 .tech {
   position: fixed;
   display: -webkit-box;
