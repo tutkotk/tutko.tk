@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Poppins;
+  src: url(fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: PoppinsB;
+  src: url(fonts/Poppins-ExtraBold.ttf);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -157,6 +167,7 @@ body p {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
+  font-family: "PoppinsB", sans-serif;
 }
 
 .main .__card .__main-header .htmlcolor {
@@ -219,9 +230,8 @@ body p {
 }
 
 .main .__card .__list .myname {
-  font-weight: 700;
+  font-family: "PoppinsB", sans-serif;
   color: #2965f1;
-  text-shadow: 0px 0px 8px rgba(51, 111, 251, 0.6);
 }
 
 .main .__card .__list .web {
@@ -277,9 +287,8 @@ body p {
 }
 
 .main .__card .__list #icdi-link {
-  font-weight: 700;
+  font-family: "PoppinsB", sans-serif;
   color: #2965f1;
-  text-shadow: 0px 0px 8px rgba(51, 111, 251, 0.6);
 }
 
 .main .__card .__list li:nth-child(1),
@@ -290,10 +299,9 @@ body p {
 
 .main .__card .__question {
   color: #c76494;
-  text-shadow: 0px 0px 8px rgba(209, 110, 158, 0.6);
   font-size: 2.986rem;
   padding-top: calc(2 * 1.563rem);
-  font-weight: 700;
+  font-family: "PoppinsB", sans-serif;
 }
 
 .main .__card .__mail {
@@ -322,7 +330,7 @@ body p {
 .main .__card .__mail span {
   display: inline-block;
   font-size: 2.074rem;
-  font-weight: 700;
+  font-family: "PoppinsB", sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #e44d26;
