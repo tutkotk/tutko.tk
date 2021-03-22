@@ -198,10 +198,12 @@ body p {
   padding-bottom: calc(2 * 1.563rem);
   font-weight: 300;
   text-transform: uppercase;
-  text-shadow: 0px 0px 12px #f9e227;
+  text-shadow: 0px 0px 12px rgba(249, 226, 39, 0.6);
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .main .__card .__list {
