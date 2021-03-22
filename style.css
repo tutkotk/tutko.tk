@@ -254,6 +254,7 @@ body p {
 }
 
 .main .__card .__list #glarses {
+  vertical-align: middle;
   display: inline-block;
   height: 5rem;
 }
@@ -345,6 +346,7 @@ body p {
   width: 25vw;
   right: 0;
   bottom: 0;
+  z-index: 2;
 }
 
 .tech {
@@ -403,13 +405,6 @@ body p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  #surfer {
-    position: relative;
-    width: 20vw;
-    left: 50%;
-    bottom: 1rem;
-    z-index: 4;
   }
 }
 
