@@ -113,6 +113,7 @@ body p {
 
 .header .__dot-tk {
   color: #e44d26;
+  text-shadow: 0px 0px 8px rgba(238, 87, 48, 0.6);
 }
 
 @media only screen and (max-width: 900px) {
@@ -160,38 +161,47 @@ body p {
 
 .main .__card .__main-header .htmlcolor {
   color: #e44d26;
+  text-shadow: 0px 0px 8px rgba(238, 87, 48, 0.6);
 }
 
 .main .__card .__main-header .csscolor {
   color: #2965f1;
+  text-shadow: 0px 0px 8px rgba(51, 111, 251, 0.6);
 }
 
 .main .__card .__main-header .sasscolor {
   color: #c76494;
+  text-shadow: 0px 0px 8px rgba(209, 110, 158, 0.6);
 }
 
 .main .__card .__main-header .jscolor {
   color: #efd81d;
+  text-shadow: 0px 0px 8px rgba(249, 226, 39, 0.6);
 }
 
 .main .__card .__main-header .reactcolor {
   color: #61dafb;
+  text-shadow: 0px 0px 8px rgba(107, 228, 251, 0.6);
 }
 
 .main .__card .__main-header .nextjscolor {
-  color: white;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.6);
 }
 
 .main .__card .__main-header .matuaicolor {
   color: #e44d26;
+  text-shadow: 0px 0px 8px rgba(238, 87, 48, 0.6);
 }
 
-.main .__card .__welcome {
+.main .__card #hwelcome {
   color: #efd81d;
-  font-size: 2.074rem;
   padding-bottom: calc(2 * 1.563rem);
   font-weight: 300;
-  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 12px #f9e227;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .main .__card .__list {
@@ -209,6 +219,7 @@ body p {
 .main .__card .__list .myname {
   font-weight: 700;
   color: #2965f1;
+  text-shadow: 0px 0px 8px rgba(51, 111, 251, 0.6);
 }
 
 .main .__card .__list .web {
@@ -266,6 +277,7 @@ body p {
 .main .__card .__list #icdi-link {
   font-weight: 700;
   color: #2965f1;
+  text-shadow: 0px 0px 8px rgba(51, 111, 251, 0.6);
 }
 
 .main .__card .__list li:nth-child(1),
@@ -276,6 +288,7 @@ body p {
 
 .main .__card .__question {
   color: #c76494;
+  text-shadow: 0px 0px 8px rgba(209, 110, 158, 0.6);
   font-size: 2.986rem;
   padding-top: calc(2 * 1.563rem);
   font-weight: 700;
@@ -424,14 +437,19 @@ body p {
 }
 
 .htmlsvg {
+  -webkit-box-ordinal-group: 6;
+      -ms-flex-order: 5;
+          order: 5;
   position: relative;
   height: 17.6vh;
-  margin-top: 2vh;
   margin-bottom: 2vh;
   z-index: 1;
 }
 
 .csssvg {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
   position: relative;
   height: 17.6vh;
   margin-bottom: 2vh;
@@ -439,6 +457,9 @@ body p {
 }
 
 .sasssvg {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
   position: relative;
   height: 17.6vh;
   margin-bottom: 2vh;
@@ -446,6 +467,9 @@ body p {
 }
 
 .jssvg {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
   position: relative;
   height: 17.6vh;
   margin-bottom: 2vh;
@@ -453,8 +477,12 @@ body p {
 }
 
 .reactsvg {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   position: relative;
   height: 17.6vh;
+  margin-top: 2vh;
   margin-bottom: 2vh;
   z-index: 1;
 }
