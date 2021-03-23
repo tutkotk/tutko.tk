@@ -164,8 +164,9 @@ body p {
   padding-bottom: calc(2 * 1.563rem);
   -ms-flex-item-align: start;
       align-self: flex-start;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
   font-family: "PoppinsB", sans-serif;
 }
 
@@ -209,10 +210,11 @@ body p {
   font-weight: 300;
   text-transform: uppercase;
   text-shadow: 0px 0px 12px rgba(249, 226, 39, 0.6);
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
 .main .__card .__list {
