@@ -191,10 +191,6 @@ body p {
   color: #61dafb;
 }
 
-.main .__card .__main-header .matuaicolor {
-  color: #e44d26;
-}
-
 .main .__card #hwelcome {
   color: #efd81d;
   padding-bottom: calc(2 * 1.563rem);
