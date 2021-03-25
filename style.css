@@ -1,11 +1,13 @@
 @font-face {
   font-family: Poppins;
   src: url(fonts/Poppins-Light.ttf);
+  font-display: swap;
 }
 
 @font-face {
   font-family: PoppinsB;
   src: url(fonts/Poppins-ExtraBold.ttf);
+  font-display: swap;
 }
 
 * {
@@ -125,7 +127,7 @@ body p {
 }
 
 .header .__dot-tk {
-  color: #e44d26;
+  color: #f16528;
   text-shadow: 0px 0px 8px rgba(238, 87, 48, 0.6);
 }
 
@@ -172,7 +174,7 @@ body p {
 }
 
 .main .__card .__main-header .htmlcolor {
-  color: #e44d26;
+  color: #f16528;
 }
 
 .main .__card .__main-header .csscolor {
@@ -285,11 +287,13 @@ body p {
 .main .__card .__question {
   color: #c76494;
   font-size: 2.986rem;
-  padding-top: calc(2 * 1.563rem);
+  padding-top: 2.986rem;
   font-family: "PoppinsB", sans-serif;
 }
 
 .main .__card .__mail {
+  -ms-flex-item-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +303,13 @@ body p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 1.563rem;
+  margin-top: 2.986rem;
+  border-radius: 50px;
+  padding: 1.728rem 2.488rem;
+  background-color: #1e1e21;
+  border: 4px solid #f16528;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .main .__card .__mail svg {
@@ -318,7 +328,17 @@ body p {
   font-family: "PoppinsB", sans-serif;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #e44d26;
+  color: #f16528;
+}
+
+.main .__card .__mail:hover {
+  border: 4px solid #e1e1de;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0px 2px 30px rgba(225, 225, 222, 0.5);
+          box-shadow: 0px 2px 30px rgba(225, 225, 222, 0.5);
 }
 
 .main .__card .__mail:hover svg {
@@ -331,6 +351,7 @@ body p {
 
 .main .__card .__mail:hover span {
   color: #e1e1de;
+  text-shadow: 0px 2px 30px rgba(225, 225, 222, 0.5);
 }
 
 @media only screen and (max-width: 900px) {
